@@ -1,0 +1,28 @@
+###git（上传实操 最简单的）
+
+#####1.下载Github Shell到本地：https://desktop.github.com/
+
+#####2.打开Github Shell，输入以下命令生成秘钥来验证身份(1353637454@qq.com是你注册github的邮箱)
+```
+ssh-keygen -t rsa -C "1353637454@qq.com"
+```
+
+#####3.把生成的id_rsa.pub复制到你的github里就行了
+##========================================上面不懂的可以百度一大堆
+#####4.下面就很简单了
+```
+//下载下来
+ git clone https://github.com/qq1353637454/web.git
+//进入到下载下来的文件夹
+cd web
+//选择上传的文件
+git add 00-前端工具/
+//备注文件意思
+git commit -m "我的工具"
+//上传
+git push -u origin master
+```
+#####查看你的giuhub库 就有你上传的文件了
+
+
+ 
